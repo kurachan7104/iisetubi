@@ -79,7 +79,6 @@
     label {
       display: block;
       margin-bottom: 10px;
-      font-family: "HGP行書体", "HG行書体", serif;
     }
     input, textarea {
       width: 100%;
@@ -102,7 +101,6 @@
       border: none;
       border-radius: 5px;
       cursor: pointer;
-      font-family: "HGP行書体", "HG行書体", serif;
     }
     button:hover {
       opacity: 0.8;
@@ -120,6 +118,38 @@
     .footer-info h2 { font-size: 20px; margin: 5px 0; }
     .footer-info h3 { font-size: 20px; margin: 5px 0; }
     .footer-info p  { font-size: 12px; margin: 10px 0 0; }
+
+/* スマホ対応（幅768px以下） */
+@media screen and (max-width: 768px) {
+  .inner { width: 94%; max-width: 100%; }
+
+  .logo { font-size: 28px; }
+  .logo-icon { width: 60px; height: 60px; }
+
+  nav a { font-size: 18px; margin-left: 10px; }
+
+  .page-title h2 { font-size: 42px; }
+
+  .main-visual h2 { font-size: 48px; }
+  .main-visual p { font-size: 22px; }
+
+  .company-info,
+  .service p,
+  .strength p { font-size: 20px; }
+
+  .service h3,
+  .strength h3 { font-size: 28px; }
+
+  .footer-info h1 { font-size: 22px; }
+  .footer-info h2 { font-size: 16px; }
+  .footer-info h3 { font-size: 16px; }
+  .footer-info p  { font-size: 10px; }
+
+  form { font-size: 20px; }
+  input, textarea { font-size: 18px; padding: 12px; }
+  button { font-size: 20px; padding: 10px 30px; }
+}
+
 
   </style>
 </head>
@@ -151,13 +181,13 @@
 <section class="inner">
 
   <!-- formsubmit を使ったメール送信フォーム -->
-<form action="https://formsubmit.co/7deb51b6b752a056a4dde348d04eea38" method="POST">
+<form action="https://formsubmit.co/ii-setubi@outlook.jp" method="POST">
 
   <!-- スパム防止 -->
   <input type="hidden" name="_captcha" value="false">
 
   <!-- 完了後の遷移先（GitHub Pages の絶対URL） -->
-  <input type="hidden" name="_next" value="https://kurachan7104.github.io/iisetubi//thanks.html">
+  <input type="hidden" name="_next" value="thanks.html">
 
   <label>お名前</label>
   <input type="text" name="お名前" required>
@@ -188,5 +218,3 @@
 
 </body>
 </html>
-
-
